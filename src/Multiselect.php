@@ -58,6 +58,17 @@ class Multiselect extends Field
     {
         return $this->withMeta(['max' => $max]);
     }
+    
+    /**
+     * Sets the input type.
+     *
+     * @param string $type
+     * @return \OptimistDigital\MultiselectField\Multiselect
+     **/
+    public function inputType($type)
+    {
+        return $this->withMeta(['inputType' => $type]);
+    }
 
     /**
      * Sets the placeholder value displayed on the field.
